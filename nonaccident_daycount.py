@@ -45,14 +45,14 @@ html_content = f"""
             color: #222;
         }}
         .title {{
-            font-size: 3em;
+            font-size: 5em;
             font-weight: bold;
             margin-bottom: 10px;
             border-bottom: 2px solid #222; 
             padding-bottom: 10px;
         }}
         .subtitle {{
-            font-size: 2em;
+            font-size: 4em;
             margin-bottom: 30px;
             color.#555;
         }}
@@ -61,7 +61,7 @@ html_content = f"""
             font-weight: bold;
         }}
         .counter {{
-            font-size: 6em;
+            font-size: 8em;
             background: #fff;
             border: 5px solid #222;
             display: inline-block;
@@ -75,7 +75,7 @@ html_content = f"""
             transform: scale(1.05);
         }}
         .date-box {{
-            font-size: 1.5em;
+            font-size: 3em;
             margin-top: 30px;
             color: #555;
         }}
