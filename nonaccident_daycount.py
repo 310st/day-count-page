@@ -76,7 +76,7 @@ html_content = f"""
         }}
         .date-box {{
             font-size: 3em;
-            margin-top: 30px;
+            margin-top: 20px;
             color: #555;
         }}
     </style>
