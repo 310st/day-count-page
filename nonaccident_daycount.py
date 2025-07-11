@@ -9,7 +9,7 @@ repo_dir = r"C:\Users\250634\day-count-page"
 html_path = os.path.join(repo_dir, "non_accident_days.html")
 
 # 🗓️ 起点の日付（無事故カウント開始日）【必要に応じて変更】
-start_date = datetime.date(2025, 6, 20)
+start_date = datetime.date(2025, 6, 19)
 
 # 🚫 休業日リスト（土日＋任意の日）
 def is_working_day(date):
