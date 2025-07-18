@@ -51,13 +51,13 @@ html_content = f"""
         .title {{
             font-size: 6em;
             font-weight: bold;
-            margin-bottom: 1px;
+            margin-bottom: 5px;
             border-bottom: 2px solid #222; 
             padding-bottom: 10px;
         }}
         .subtitle {{
             font-size: 4em;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             color.#555;
         }}
         .plus {{
