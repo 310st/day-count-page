@@ -90,9 +90,9 @@ html_content = f"""
     <div class="subtitle">無災害記録表</div>
     <div class="counter">{working_days:,} 日</div>
     <div class="date-box">
-        <div>{start_date.year}年{start_date.month}月{start_date.day}日起算</div>
+        <div style="font-size: 1.5em;">{start_date.year}年{start_date.month}月{start_date.day}日起算</div>
         <div style="font-size: 0.8em;">（韓国 左膝靭帯損傷）</div>
-        <div>{today.year}年{today.month}月{today.day}日現在</div>
+        <div style="font-size: 1.5em;">{today.year}年{today.month}月{today.day}日現在</div>
     </div>
 </body>
 </html>
