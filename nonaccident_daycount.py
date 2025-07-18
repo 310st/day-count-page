@@ -65,7 +65,7 @@ html_content = f"""
             font-weight: bold;
         }}
         .counter {{
-            font-size: 9em;
+            font-size: 8em;
             background: #fff;
             border: 5px solid #222;
             display: inline-block;
@@ -76,7 +76,7 @@ html_content = f"""
             transition: transform 0.3s;
         }}
          .counter:hover {{
-            transform: scale(1.05);
+            transform: scale(1.00);
         }}
         .date-box {{
             font-size: 3em;
