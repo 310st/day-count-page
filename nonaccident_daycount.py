@@ -9,7 +9,7 @@ repo_dir = r"C:\Users\250634\day-count-page"
 html_path = os.path.join(repo_dir, "non_accident_days.html")
 
 # 🗓️ 起点の日付（無事故カウント開始日）【必要に応じて変更】
-start_date = datetime.date(2025, 6, 20)
+start_date = datetime.date(2025, 7, 2)
 
 # 🚫 休業日リスト（土日＋任意の日）
 def is_working_day(date):
@@ -19,6 +19,10 @@ def is_working_day(date):
     holidays = [
         datetime.date(2025, 7, 21),  # 海の日
         datetime.date(2025, 8, 11),  # 山の日
+        datetime.date(2025, 8, 12),  #一斉特別休暇
+        datetime.date(2025, 9, 15),  #敬老の日
+        datetime.date(2025, 10, 13), #スポーツの日
+        datetime.date(2025, 11, 3),  #文化の日 
     ]
     return date not in holidays
 
@@ -87,6 +91,8 @@ html_content = f"""
     <div class="counter">{working_days:,} 日</div>
     <div class="date-box">
         <div>{start_date.year}年{start_date.month}月{start_date.day}日起算</div>
+        <div>韓国 左膝靭帯損傷</div>
+        <div style={{ marginLeft: "10px", display: "inline-block" }}>
         <div>{today.year}年{today.month}月{today.day}日現在</div>
     </div>
 </body>
