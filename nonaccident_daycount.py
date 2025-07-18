@@ -51,7 +51,7 @@ html_content = f"""
         .title {{
             font-size: 6em;
             font-weight: bold;
-            margin-bottom: 50px;
+            margin-bottom: 1px;
             border-bottom: 2px solid #222; 
             padding-bottom: 10px;
         }}
