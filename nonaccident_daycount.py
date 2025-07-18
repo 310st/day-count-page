@@ -72,7 +72,7 @@ html_content = f"""
             padding: 30px 60px;
             border-radius: 15px;
             box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             transition: transform 0.3s;
         }}
          .counter:hover {{
