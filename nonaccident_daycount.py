@@ -92,7 +92,7 @@ html_content = f"""
     <div class="date-box">
         <div>{start_date.year}年{start_date.month}月{start_date.day}日起算</div>
         <div>（韓国 左膝靭帯損傷）</div>
-        <div style={{ marginLeft: "30px", display: "inline-block" }}>
+        <div style={{ marginLeft: "1000px", display: "inline-block" }}>
         <div>{today.year}年{today.month}月{today.day}日現在</div>
     </div>
 </body>
