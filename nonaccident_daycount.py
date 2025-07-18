@@ -79,7 +79,7 @@ html_content = f"""
             transform: scale(1.05);
         }}
         .date-box {{
-            font-size: 1em;
+            font-size: 3em;
             margin-top: 15px;
             color: #555;
         }}
