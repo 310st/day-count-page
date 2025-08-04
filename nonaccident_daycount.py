@@ -67,7 +67,7 @@ html_content = f"""
         .counter {{
             font-size: 8em;
             background: #fff;
-            border: 5px solid #222;
+            border: 5px solid green;
             display: inline-block;
             padding: 30px 60px;
             border-radius: 15px;
