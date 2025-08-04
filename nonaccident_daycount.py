@@ -86,7 +86,7 @@ html_content = f"""
     </style>
 </head>
 <body>
-    <div class="title">安全 <span class="plus">＋</span> 第一 &</div>
+    <div class="title">安全 <span class="plus">＋</span> 第一</div>
     <div class="subtitle">無災害記録表</div>
     <div class="counter"><span style="font-size:150px;">{working_days:,}</span> 日</div>'
     <div class="date-box">
