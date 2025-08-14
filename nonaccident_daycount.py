@@ -91,7 +91,6 @@ html_content = f"""
     <div class="counter"><span style="font-size:150px;">{working_days:,}</span> 日</div>'
     <div class="date-box">
         <div style="font-size: 1.2em;">{start_date.year}年{start_date.month}月{start_date.day}日起算</div>
-        <div style="font-size: 0.8em;">（TIRS No.214700）</div>
         <div style="font-size: 1.2em;">{today.year}年{today.month}月{today.day}日現在</div>
     </div>
 </body>
