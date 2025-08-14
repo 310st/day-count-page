@@ -87,7 +87,7 @@ html_content = f"""
 </head>
 <body>
     <div class="title">安全 <span class="plus">＋</span> 第一</div>
-    <div class="subtitle">無災害記録表TCIR</div>
+    <div class="subtitle">無災害記録表(TCIR)</div>
     <div class="counter"><span style="font-size:150px;">{working_days:,}</span> 日</div>'
     <div class="date-box">
         <div style="font-size: 1.2em;">{start_date.year}年{start_date.month}月{start_date.day}日起算</div>
