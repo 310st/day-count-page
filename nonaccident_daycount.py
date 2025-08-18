@@ -26,14 +26,14 @@ def is_working_day(date):
     ]
     return date not in holidays
 
-# 📆 無事故日数の計算
+#無事故日数の計算
 today = datetime.date.today()
 working_days = sum(
     1 for day in range((today - start_date).days + 1)
     if is_working_day(start_date + datetime.timedelta(days=day))
 )
 
-# 📝 HTMLの内容
+# HTMLの内容
 html_content = f"""
 <!DOCTYPE html>
 <html lang="ja">
@@ -98,13 +98,13 @@ html_content = f"""
 
 """
 
-# 💾 HTMLファイルに出力
+# HTMLファイルに出力
 with open(html_path, "w", encoding="utf-8") as f:
     f.write(html_content)
 
 print(f"HTMLを出力しました: {html_path}")
 
-# ✅ Gitに反映（add → commit → push）
+# Gitに反映（add → commit → push）
 try:
     subprocess.run(["git", "-C", repo_dir, "add", "."], check=True)
     subprocess.run(
