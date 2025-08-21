@@ -23,7 +23,7 @@ def is_working_day(date):
         datetime.date(2025, 9, 15),  #敬老の日
         datetime.date(2025, 10, 13), #スポーツの日
         datetime.date(2025, 11, 3),  #文化の日 
-        datetime.date(2025, 11, 4),
+        datetime.date(2025, 11, 4),  
         datetime.date(2025, 11, 24),
         datetime.date(2025, 12, 29),
         datetime.date(2025, 12, 30),
