@@ -2,61 +2,127 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>無災害記録表</title>
-    <style>
-        body {
-            font-family: "Meiryo", Arial, sans-serif;
-            background-color: #f7f7f7;
-            text-align: center;
-            padding: 20px;
-            color: #222;
-        }
-        .title {
-            font-size: 6em;
-            font-weight: bold;
-            margin-bottom: 5px;
-            border-bottom: 2px solid #222; 
-            padding-bottom: 10px;
-        }
-        .subtitle {
-            font-size: 4em;
-            margin-bottom: 15px;
-            color.#555;
-        }
-        .plus {
-            color: green;
-            font-weight: bold;
-        }
-        .counter {
-            font-size: 8em;
-            background: #fff;
-            border: 5px solid green;
-            display: inline-block;
-            padding: 30px 60px;
-            border-radius: 15px;
-            box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
-            margin-bottom: 5px;
-            transition: transform 0.3s;
-        }
-         .counter:hover {
-            transform: scale(1.05);
-        }
-        .date-box {
-            font-size: 3em;
-            margin-top: 15px;
-            color: #555;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>無災害記録表</title>
+
+<style>
+/* ------------- カラー設定 ------------- */
+:root {
+  --primary   : #00A9E0;   /* TELカラー青 */
+  --secondary : #78BE20;   /* TELカラーミドリ*/
+  --bg-light  : #00A9E0;   /* 背景、TEL青 */
+}
+
+/* -------- Reset -------- */
+* { box-sizing:border-box; margin:0; padding:0; }
+
+/* -------- Layout -------- */
+html,body { height:100%; }
+body {
+  font-family: "Meiryo", Arial, sans-serif;
+  background:var(--bg-light);
+  color:#222;
+  display:grid;
+  grid-template-rows:auto 1fr 60px;  /* header - main - footer */
+}
+
+/* -------- Header -------- */
+header {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:transparent;  /* 帯や影を消す */
+  padding:60px 0 12px 0;
+}
+header .logo {
+  font-size:clamp(56px, 10vw, 140px);  /* 画面幅に応じて伸縮 */
+  font-weight:700;                     /* 普通の太字 */
+  letter-spacing:4px;
+  line-height:1;
+  color:#fff;
+}
+
+/* 十字の色指定 */
+.cross {
+  color: var(--secondary);             /* 緑の色 */
+  -webkit-text-stroke: 3.5px white;   /* 白い縁取り */
+  text-stroke: 1.5px white;            /* 標準（まだ未対応が多い） */
+}
+
+/* -------- Main -------- */
+main {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.card {
+  background:#fff;
+  border:1px solid #e0e0e0;
+  border-radius:12px;
+  padding:40px 60px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.08);
+  min-width:60vw;
+  max-width:1000px;
+  text-align:center;
+}
+.card h2 {
+  font-size:4.1rem;
+  color:var(--primary);
+  margin-bottom:1px;
+  font-weight:700;
+}
+.counter {
+  font-size:clamp(100px, 16vw, 240px);
+  color:var(--secondary);
+  font-weight:700;
+  line-height:1;
+  margin:10px 0 14px;
+}
+.counter small {
+  font-size:0.18em;
+  font-weight:500;
+  margin-left:10px;
+}
+.date-box {
+  font-size:2.5rem;
+  color:#555;
+  line-height:1.5;
+}
+
+/* -------- Footer -------- */
+footer {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:1.5rem;
+  color:#fff;
+}
+</style>
 </head>
+
 <body>
-    <div class="title">安全 <span class="plus">＋</span> 第一</div>
-    <div class="subtitle">無災害記録表(TCIR)</div>
-    <div class="counter"><span style="font-size:150px;">57</span> 日</div>'
-    <div class="date-box">
-        <div style="font-size: 1.2em;">2025年7月3日起算</div>
-        <div style="font-size: 1.2em;">2025年9月25日現在</div>
-    </div>
+  <!-- Header -->
+  <header>
+    <div class="logo">SAFETY<span class="cross">+</span>FIRST</div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="card">
+      <h2>無災害継続日数(TCIR)</h2>
+      <div class="counter">57<small>日</small></div>
+
+      <div class="date-box">
+        2025年7月3日起算<br>
+        2025年9月25日現在
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>TML 環境安全企画推進部</footer>
 </body>
 </html>
-
