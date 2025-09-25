@@ -128,7 +128,7 @@ main {{
   margin-left:10px;
 }}
 .date-box {{
-  font-size:1.5rem;
+  font-size:2.5rem;
   color:#555;
   line-height:1.5;
 }}
