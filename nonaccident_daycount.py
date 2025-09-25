@@ -89,7 +89,7 @@ header .logo {{
   color: var(--secondary);           /* 緑色 */
   -webkit-text-stroke: 3.5px white; /* 太い白縁取り */
   /* text-stroke は省略してもOK */
-  font-weight: 900;                  /* 太字に */
+  font-weight: 700;                  /* 太字に */
   font-size: 1.5em;                  /* 大きめにして太く見せる */
   text-shadow: 
     -1px -1px 0 white,
