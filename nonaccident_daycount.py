@@ -156,13 +156,13 @@ footer {{
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">SAFETY<span class="cross">+</span>FIRST</div>
+    <div class="logo">Safety<span class="cross">+</span>First</div>
   </header>
 
   <!-- Main -->
   <main>
     <section class="card">
-      <h2>無災害継続日数(TCIR)</h2>
+      <h2>無災害継続日数 (TCIR)</h2>
       <div class="counter">{working_days:,}<small>日</small></div>
 
       <div class="date-box">
