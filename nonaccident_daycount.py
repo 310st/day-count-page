@@ -96,7 +96,7 @@ main {{
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:8px;
+  padding:4px;
 }}
 
 .card {{
