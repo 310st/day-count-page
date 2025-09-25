@@ -156,7 +156,7 @@ footer {{
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">Safety<span class="cross">+</span>First</div>
+    <div class="logo">SAFETY<span class="cross">+</span>FIRST</div>
   </header>
 
   <!-- Main -->
