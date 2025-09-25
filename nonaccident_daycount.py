@@ -86,16 +86,18 @@ header .logo {{
 
 /* 十字の色指定 */
 .cross {{
-  color: var(--secondary);           /* 緑色 */
-  -webkit-text-stroke: 3.5px white; /* 太い白縁取り */
-  /* text-stroke は省略してもOK */
-  font-weight: 2000;                  /* 太字に */
-  font-size: 1.25em;                  /* 大きめにして太く見せる */
-  text-shadow: 
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;                /* 縁取りフォールバック */
+  color: var(--secondary);                 /* 緑色 */
+  -webkit-text-stroke: 2.5px var(--secondary);  /* 緑の太い縁取り(実質太く見せる部分) */
+  text-shadow:
+    0 0 0 white,                          /* 白の縁取りの代わりにシャドウを使う */
+    -2px 0 0 white,
+    2px 0 0 white,
+    0 -2px 0 white,
+    0 2px 0 white,
+    -2px -2px 0 white,
+    -2px 2px 0 white,
+    2px -2px 0 white,
+    2px 2px 0 white;
 }}
 
 /* -------- Main -------- */
