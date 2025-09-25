@@ -74,7 +74,7 @@ header {{
   justify-content:center;
   align-items:center;
   background:transparent;  /* 帯や影を消す */
-  padding:40px 0 12px 0;
+  padding:60px 0 12px 0;
 }}
 header .logo {{
   font-size:clamp(56px, 10vw, 140px);  /* 画面幅に応じて伸縮 */
