@@ -47,7 +47,7 @@ html_content = f"""
     <title>無災害記録表</title>
     <style>
         body {{
-            font-family: "Arial", sans-serif;
+            font-family: "Meiryo", Arial, sans-serif;
             background-color: #f7f7f7;
             text-align: center;
             padding: 20px;
