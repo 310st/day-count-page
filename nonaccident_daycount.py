@@ -17,17 +17,17 @@ def is_working_day(date):
         return False
     #追加したい休業日があればここに追記
     holidays = [
-        datetime.date(2025, 7, 21),  # 海の日
-        datetime.date(2025, 8, 11),  # 山の日
-        datetime.date(2025, 8, 12),  #一斉特別休暇
-        datetime.date(2025, 9, 15),  #敬老の日
-        datetime.date(2025, 10, 13), #スポーツの日
-        datetime.date(2025, 11, 3),  #文化の日 
-        datetime.date(2025, 11, 4),  
-        datetime.date(2025, 11, 24),
-        datetime.date(2025, 12, 29),
-        datetime.date(2025, 12, 30),
-        datetime.date(2025, 12, 31)
+        datetime.date(2026, 1, 1), 
+        datetime.date(2026, 1, 2),
+        datetime.date(2025, 1, 12),
+        datetime.date(2025, 2, 11),
+        datetime.date(2025, 2, 23),
+        datetime.date(2025, 3, 20), 
+        datetime.date(2025, 4, 29),  
+        datetime.date(2025, 5, 4),
+        datetime.date(2025, 5, 5),
+        datetime.date(2025, 5, 6),
+        datetime.date(2025, 7, 20)
     ]
     return date not in holidays
 
