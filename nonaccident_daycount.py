@@ -19,15 +19,15 @@ def is_working_day(date):
     holidays = [
         datetime.date(2026, 1, 1), 
         datetime.date(2026, 1, 2),
-        datetime.date(2025, 1, 12),
-        datetime.date(2025, 2, 11),
-        datetime.date(2025, 2, 23),
-        datetime.date(2025, 3, 20), 
-        datetime.date(2025, 4, 29),  
-        datetime.date(2025, 5, 4),
-        datetime.date(2025, 5, 5),
-        datetime.date(2025, 5, 6),
-        datetime.date(2025, 7, 20)
+        datetime.date(2026, 1, 12),
+        datetime.date(2026, 2, 11),
+        datetime.date(2026, 2, 23),
+        datetime.date(2026, 3, 20), 
+        datetime.date(2026, 4, 29),  
+        datetime.date(2026, 5, 4),
+        datetime.date(2026, 5, 5),
+        datetime.date(2026, 5, 6),
+        datetime.date(2026, 7, 20)
     ]
     return date not in holidays
 
